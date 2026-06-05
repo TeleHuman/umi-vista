@@ -22,7 +22,7 @@ This repository is currently an initial skeleton. Code cleanup is in progress.
 
 The released datasets and pretrained model checkpoints are hosted in the Hugging Face collection linked above.
 
-## What We Plan to Open Source
+## Open Source (Coming soon)
 
 This repository will organize the VISTA code release around three main parts:
 

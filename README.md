@@ -69,7 +69,7 @@ Large assets are distributed separately through Hugging Face:
 
 - UMI-VQA resources
 - Validated trajectory data
-- Pretrained model checkpoints
+- Pretrained model checkpoints (Pretrained model checkpoints)
 
 Collection: https://huggingface.co/collections/TeleEmbodied/vista
 

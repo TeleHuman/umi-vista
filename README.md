@@ -1,8 +1,6 @@
 <div align="center">
 
-# VISTA
-
-**Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training**
+# VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg)](https://arxiv.org/abs/2606.04708)
 [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://tele-umi-vista.github.io)

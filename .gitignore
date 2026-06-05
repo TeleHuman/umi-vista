@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs and temporary outputs
+*.log
+logs/
+tmp/
+temp/
+outputs/
+runs/
+
+# Data and model artifacts
+data/
+datasets/
+checkpoints/
+ckpts/
+weights/
+models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Experiment artifacts
+wandb/
+tensorboard/
+tb_logs/
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp

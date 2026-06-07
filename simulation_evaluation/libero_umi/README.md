@@ -2,10 +2,16 @@
 
 This directory contains the project-owned LIBERO-UMI evaluation runner for VISTA checkpoints.
 
-The runner evaluates each LIBERO task in the selected suites. `N_EPISODES_PER_TASK` maps directly to `--eval.n_episodes`, so `N_EPISODES_PER_TASK=5` means five episodes for every task in each suite.
+The runner evaluates each LIBERO task in the selected suites. `N_EPISODES_PER_TASK` maps directly to `--eval.n_episodes`; the default is 50 episodes for every task in each suite.
 
 ```bash
 bash simulation_evaluation/libero_umi/run_libero_umi_eval.sh
+```
+
+For a quick check, explicitly override the default:
+
+```bash
+N_EPISODES_PER_TASK=5 bash simulation_evaluation/libero_umi/run_libero_umi_eval.sh
 ```
 
 Important environment variables:

@@ -34,7 +34,7 @@ This creates:
 ${LEROBOT_ROOT}/third_party/pi_transformers
 ```
 
-The generated directory is a local installation artifact and should not be committed. The archive that should stay in the repository is:
+The archive used to prepare this dependency is:
 
 ```text
 ${LEROBOT_ROOT}/third_party/transformers-dcddb970176382c0fcf4521b0c0e6fc15894dfe0.zip
@@ -45,7 +45,6 @@ Install the copied LeRobot package after the archive has been prepared:
 ```bash
 cd ${LEROBOT_ROOT}
 pip install --no-build-isolation -e ".[pi]"
-export PYTHONPATH=${LEROBOT_ROOT}/src:${LEROBOT_ROOT}/third_party/pi_transformers/src:${PYTHONPATH:-}
 ```
 
 ## Required Inputs

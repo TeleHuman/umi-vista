@@ -1,6 +1,6 @@
 # LIBERO-UMI Evaluation Installation
 
-This guide assumes the VISTA fine-tuning installation has already been completed. Follow `docs/installation_finetuning.md` first so the conda environment, `PYTHONPATH`, and converted VISTA checkpoints are available.
+This guide assumes the VISTA fine-tuning installation has already been completed. Follow `docs/installation_finetuning.md` first so the conda environment, LeRobot package, and converted VISTA checkpoints are available.
 
 ## Environment
 
@@ -13,7 +13,7 @@ export PROJECT_ROOT=/data_ysy/app/codex_space/project/2026_06_05/umi-vista
 export LEROBOT_ROOT=${PROJECT_ROOT}/post_training/lerobot
 cd ${LEROBOT_ROOT}
 bash third_party/prepare_pi_transformers.sh
-export PYTHONPATH=${LEROBOT_ROOT}/src:${LEROBOT_ROOT}/third_party/pi_transformers/src:${PYTHONPATH:-}
+pip install --no-build-isolation -e ".[pi,libero]"
 export TOKENIZERS_PARALLELISM=false
 export MUJOCO_GL=egl
 export PYOPENGL_PLATFORM=egl
@@ -122,13 +122,12 @@ The default VISTA LIBERO-UMI checkpoint is:
 
 The checkpoint metadata must contain `"type": "vista"` in `config.json`.
 
-## Smoke Evaluation
+## Evaluation
 
-The project runner evaluates every task in each selected LIBERO suite. `N_EPISODES_PER_TASK=5` means five episodes for every task, not five total episodes per suite.
+The project runner evaluates every task in each selected LIBERO suite. By default, `N_EPISODES_PER_TASK=50`, which means 50 episodes for every task, not 50 total episodes per suite.
 
 ```bash
 cd /data_ysy/app/codex_space/project/2026_06_05/umi-vista
-N_EPISODES_PER_TASK=5 \
 GPU_ID=0 \
 bash simulation_evaluation/libero_umi/run_libero_umi_eval.sh
 ```
@@ -139,12 +138,12 @@ The runner writes per-suite outputs, logs, and `summary.tsv` under `OUTPUT_ROOT`
 /data_ysy/app/codex_space/temp/libero_umi_eval
 ```
 
-## Full Evaluation
+## Quick Check
 
-For a full 50-episodes-per-task evaluation, set:
+For a shorter five-episodes-per-task check, override the default:
 
 ```bash
-N_EPISODES_PER_TASK=50 bash simulation_evaluation/libero_umi/run_libero_umi_eval.sh
+N_EPISODES_PER_TASK=5 bash simulation_evaluation/libero_umi/run_libero_umi_eval.sh
 ```
 
 Historical full-run reference rates for the VISTA predecessor checkpoint are:

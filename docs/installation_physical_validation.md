@@ -23,7 +23,7 @@ This creates a generated local directory:
 physical_validation/cross_embodiment_replay_and_score/model
 ```
 
-The generated `model/` directory is ignored by git. The archive that should stay in the repository is:
+The archive used to prepare these assets is:
 
 ```text
 physical_validation/cross_embodiment_replay_and_score/model_assets.tar.gz

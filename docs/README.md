@@ -1,13 +1,9 @@
 # Documentation
 
-This directory will hold extended documentation for the VISTA code release.
+This directory contains detailed setup and launch guides for the VISTA code release.
 
-Planned topics:
+- [Fine-tuning installation](installation_finetuning.md)
+- [LIBERO-UMI evaluation installation](installation_libero_umi.md)
+- [Physical validation installation](installation_physical_validation.md)
 
-- Post-training workflow.
-- Simulation evaluation workflow.
-- Physical-validation pipeline details.
-- Dataset and model asset references.
-- Repository maintenance notes.
-
-Current status: placeholder only.
+Start with the repository-level [README](../README.md) for the shortest public setup path. Use these guides when you need validated host paths, manual LIBERO configuration, or more detailed smoke-test notes.

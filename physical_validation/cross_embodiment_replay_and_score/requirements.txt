@@ -1,0 +1,30 @@
+# python3 -m pip install -r requirements.txt
+# python3 -m pip install --user --break-system-packages -r requirements.txt
+
+# Core runtime deps
+numpy==1.24.4
+scipy==1.15.3
+termcolor==3.3.0
+
+# MuJoCo simulation + viewer
+mujoco==3.6.0
+
+# IK / kinematics solver
+mink==1.1.0
+
+# Provides: from loop_rate_limiters import RateLimiter
+loop-rate-limiters==1.2.0
+
+# LeRobot parquet episode loading in replay.py
+pandas==2.3.3
+pyarrow==23.0.1
+
+# RealMan SDK used by rm75_interface.py
+Robotic_Arm==1.1.5
+
+# Robotiq gripper communication used by utils/robotiq_interface.py
+pyrobotiqgripper==1.0.1
+pyserial==3.5
+
+# Optional demo / plotting deps for utils/lowpass_filter.py and utils/robotiq_interface.py __main__
+matplotlib==3.9.2

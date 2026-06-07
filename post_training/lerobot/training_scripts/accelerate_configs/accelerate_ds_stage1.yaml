@@ -1,0 +1,19 @@
+compute_environment: LOCAL_MACHINE
+debug: false
+deepspeed_config:
+  zero3_init_flag: false
+  deepspeed_config_file: /root/rhodes-lerobot-internal/training_scripts/accelerate_configs/deepspeed_configs/zero_stage1_config.json
+distributed_type: DEEPSPEED
+machine_rank: 0
+main_training_function: main
+# number of nodes
+num_machines: 1
+# number of gpus per node
+num_processes: 4
+# mixed precision
+mixed_precision: 'no'
+downcast_bf16: 'no'
+# rdzv backend
+rdzv_backend: static
+same_network: true
+use_cpu: false

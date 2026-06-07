@@ -1,0 +1,32 @@
+{
+  "chassis": 0,
+  "torso": 0,
+  "left_arm": 6,
+  "right_arm": 6,
+  "left_gripper": 1,
+  "right_gripper": 1,
+  "home_pos": {
+    "chassis": [],
+    "torso": [],
+    "left_arm": [0, 0.652, 0.221, 0.433, 0, 0],
+    "right_arm": [0, 0.652, 0.221, 0.433, 0, 0],
+    "left_gripper": [100.0],
+    "right_gripper": [100.0]
+  },
+  "exit_pos": {
+    "chassis": [],
+    "torso": [],
+    "left_arm": [0, 0, 0, 0, 0, 0],
+    "right_arm": [0, 0, 0, 0, 0, 0],
+    "left_gripper": [100.0],
+    "right_gripper": [100.0]
+  },
+  "max_step_rad": {
+    "chassis": [],
+    "torso": [],
+    "left_arm": [3.0, 3.0, 3.0, 5.0, 5.0, 5.0],
+    "right_arm": [3.0, 3.0, 3.0, 5.0, 5.0, 5.0],
+    "left_gripper": [50.0],
+    "right_gripper": [50.0]
+  }
+}

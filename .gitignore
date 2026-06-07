@@ -31,6 +31,13 @@ models/
 *.ckpt
 *.safetensors
 
+# Generated from the vendored Transformers archive
+post_training/lerobot/third_party/pi_transformers/
+
+# Generated from physical_validation model_assets.tar.gz
+physical_validation/cross_embodiment_replay_and_score/model/
+physical_validation/cross_embodiment_replay_and_score/log/
+
 # Experiment artifacts
 wandb/
 tensorboard/
